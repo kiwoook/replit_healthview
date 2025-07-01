@@ -13,12 +13,12 @@ import { Dumbbell, Plus, User, Settings, LogOut, Menu } from "lucide-react";
 import { useState } from "react";
 
 export default function Header() {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleLogout = () => {
-    window.location.href = "/api/logout";
+    logout();
   };
 
   const navItems = [
