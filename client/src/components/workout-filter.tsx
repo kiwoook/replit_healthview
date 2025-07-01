@@ -92,7 +92,7 @@ export default function WorkoutFilter({ filters, onFiltersChange }: WorkoutFilte
                   <SelectValue placeholder="전체" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">전체</SelectItem>
+                  <SelectItem value="all">전체</SelectItem>
                   <SelectItem value="beginner">초급</SelectItem>
                   <SelectItem value="intermediate">중급</SelectItem>
                   <SelectItem value="advanced">고급</SelectItem>
@@ -114,7 +114,7 @@ export default function WorkoutFilter({ filters, onFiltersChange }: WorkoutFilte
                   <SelectValue placeholder="제한 없음" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">제한 없음</SelectItem>
+                  <SelectItem value="none">제한 없음</SelectItem>
                   <SelectItem value="15">15분</SelectItem>
                   <SelectItem value="30">30분</SelectItem>
                   <SelectItem value="45">45분</SelectItem>
@@ -137,7 +137,7 @@ export default function WorkoutFilter({ filters, onFiltersChange }: WorkoutFilte
                   <SelectValue placeholder="제한 없음" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">제한 없음</SelectItem>
+                  <SelectItem value="none">제한 없음</SelectItem>
                   <SelectItem value="30">30분</SelectItem>
                   <SelectItem value="45">45분</SelectItem>
                   <SelectItem value="60">60분</SelectItem>
@@ -162,7 +162,7 @@ export default function WorkoutFilter({ filters, onFiltersChange }: WorkoutFilte
                 <SelectValue placeholder="전체" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">전체</SelectItem>
+                <SelectItem value="all">전체</SelectItem>
                 <SelectItem value="false">기구 없음</SelectItem>
                 <SelectItem value="true">기구 필요</SelectItem>
               </SelectContent>
