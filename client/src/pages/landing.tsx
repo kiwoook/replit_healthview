@@ -1,13 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dumbbell, Users, TrendingUp, Star, Play, CheckCircle } from "lucide-react";
-import { useAuth } from "@/hooks/useAuth";
 
 export default function Landing() {
-  const { login } = useAuth();
-
   const handleLogin = () => {
-    login();
+    window.location.href = "/api/login";
   };
 
   return (
